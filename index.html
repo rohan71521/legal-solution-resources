@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+<!-- font awasome -->
+<script src="https://kit.fontawesome.com/4fa3f6d25c.js" crossorigin="anonymous"></script>
 <!-- style -->
 <style>
     .garamond{
@@ -32,6 +33,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'primary-btn': '#B68C5A',
           }
         }
       }
@@ -39,6 +41,54 @@
   </script>
 </head>
 <body>
-    
+    <header class="container mx-auto px-2 md:px-4 lg:px-20">
+        <nav  class="py-2 md:py-4 lg:py-6"> 
+          <div class="navbar bg-base-100 flex items-center justify-center">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home <i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+             <div><img src="./images/logo2.png" alt=""></div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home <i class="fa-solid fa-angle-right"></i></a> </li>
+                <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></i></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="p-3 rounded-lg font-semibold text-white bg-primary-btn text-xs md:text-sm lg:text-base">Free Consultation</a>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+          <div class="hero bg-cover max-w-7xl " style="height:65vh; background-image: url('./images/banner.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class=" text-center text-neutral-content">
+              <div class="md:px-5 lg:px-4 ">
+                <h1 class="mb-5 font-[garamond] text-3xl md:text-5xl lg:text-7xl font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+                <p class="mb-5 lg:max-w-2xl md-max-w-xl font-[poppins]  text-xs md:text-sm lg:text-base  ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+             <div class="flex justify-center gap-1">
+              <input type="text" class="lg:w-[500px] md:w-[500px] p-1 md:p-2 lg:p-2 rounded-lg w-56">
+              <button class="py-2 px-3 rounded-lg font-semibold text-white bg-primary-btn text-xs md:text-sm lg:text-base">Search</button>
+             </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </header>
 </body>
 </html>
